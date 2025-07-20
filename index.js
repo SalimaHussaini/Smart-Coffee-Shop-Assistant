@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // نمایش دیالوگ ورود
+  
   const username = prompt("Enter your username (admin/user):");
   const password = prompt("Enter your password:");
 
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  // ادامه کد موجود
+  
   const form = document.getElementById("coffeeForm");
   const resultBox = document.getElementById("result");
 
