@@ -1,18 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // نمایش دیالوگ ورود
+  const username = prompt("Enter your username (admin/user):");
+  const password = prompt("Enter your password:");
+
+  if (!["admin", "user"].includes(username) || password !== "1234") {
+    alert("Access denied. Invalid credentials.");
+    return;
+  }
+
+  // ادامه کد موجود
   const form = document.getElementById("coffeeForm");
   const resultBox = document.getElementById("result");
-  
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    if (!["admin", "user"].includes(username) || password !== "1234") {
-      alert("Access denied. Invalid credentials.");
-      return;
-    }
 
     const name = document.getElementById("name").value;
     const age = parseInt(document.getElementById("age").value);
